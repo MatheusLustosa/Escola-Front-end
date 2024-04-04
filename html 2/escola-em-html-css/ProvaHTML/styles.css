@@ -1,0 +1,150 @@
+    html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #c09f60
+    }
+    main {
+        background-color: #c09f60;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .Flexnav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        background-color: #f2f2f2; 
+        padding: 10px;
+        margin-top: 0%;
+       
+        list-style: none;
+        text-decoration: none ;
+        margin-bottom: 0%;
+    }
+    
+    .Flexnav li a{
+        margin-right: 20px;
+        text-decoration: none; 
+        color: #333;    
+    }
+    
+    .Flexnav li:last-child {
+        margin-right: 0;
+        
+    }
+
+    #imagem{
+        width: 40px;
+        height: auto;
+    }
+    #start {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    .noticias{
+        background-color: #3E555E;
+    }
+    #ultimas{
+        background-color: #3E555E;
+        text-align: center;
+        margin-bottom: 0%;
+        padding-bottom: 10px; 
+        margin-top: 0%;
+        padding-right: 5px;
+        
+    }
+    
+    .noticias-list {
+        background-color: #3E555E;
+        display: flex;
+        justify-content:center; 
+        width: 1280px;
+        margin-top: 0%;
+        padding-left: 20px;
+        padding-right: 10px;
+        
+
+    }
+    
+    .noticias-list h1 {
+        font-size: 16px; 
+        display: flex;
+        justify-content: center;
+        padding-right: 120px;
+      
+    }
+    
+    .noticias-list p {
+        font-size: 14px; 
+        max-width: 80%;
+        
+    }
+
+    .formulario{
+       
+        color: rgb(9, 6, 12);
+    }
+
+    #formulario-top{
+        margin: 0%;
+    }
+    .corpoDocente {
+        display: flex;
+        justify-content:center;
+        gap: 5%;
+        margin-top: 5%;
+        background-color: #c09f60;
+        
+    }
+    .corpoDocente img {
+        width: 100%; 
+        height: auto; 
+        max-width: 200px; 
+        margin: 0 10px; 
+        max-height: 200px;
+        min-height: 200px;
+        border-radius: 30px;
+    }
+    .corpoDocente p{
+        display: flex;
+        justify-content: center;
+    }
+    .eventos {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 10%;
+    }
+    
+    .eventos img {
+        width: 400px; 
+        max-width: 100%; 
+        object-fit: contain;
+        border-radius: 5em;
+        border: #3E555E;
+        
+    }
+    #corrida{
+        height: 210px;
+        border-radius: 40em;
+    }
+    .eventos p{
+        color: #3E555E;
+        max-height: auto;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    @media only screen and (max-width: 600px) {
+        .body {
+            font-size: 0.5em;
+            padding: 0;
+        }
+    }
+    
