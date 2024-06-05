@@ -10,72 +10,41 @@
 </head>
 <body>
     <header>
-        <nav >
-            <ul class="Flexnav">
+        <nav>
+            <button class="hamburger" id="hamburger">
+                <i class="fa fa-bars"></i>
+            </button>
+            <ul class="Flexnav"id="nav-links">
                 <img id="imagem" src="assets/escola.png" alt="escola">
-                <li><a href="index.html" > <i class="fa-solid fa-arrow-left"></i>Principal</a></li>
-                <li><a href="contato.html" > <i class="fa-solid fa-school"></i>Contato</a></li>
-                <li><a href="corpoDocente.html"><i class="fa-solid fa-person-chalkboard"></i>Corpo docente</a></li>
-                <li><a href="eventosEscolares.html"><i class="fa-solid fa-baseball"></i>Eventos Escolaress</a></li>
-                <li><a href="recurso.html"><i class="fa-solid fa-person-breastfeeding"></i>Recurso para os pais</a></li>
+                <li><a href="index.html" tabindex="1"> <i class="fa-solid fa-arrow-left"></i>Principal</a></li>
+                <li><a href="contato.html" tabindex="2"> <i class="fa-solid fa-school"></i>Contato</a></li>
+                <li><a href="corpoDocente.html" tabindex="3"><i class="fa-solid fa-person-chalkboard"></i>Corpo docente</a></li>
+                <li><a href="eventosEscolares.html" tabindex="4"><i class="fa-solid fa-baseball"></i>Eventos Escolaress</a></li>
+                <li><a href="recurso.html" tabindex="5"><i class="fa-solid fa-person-breastfeeding"></i>Recurso para os pais</a></li>
+                <li><button id="translate-button">Traduzir</button></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div >
-            <h1>
-            Missão
-            </h1>
-            <p>
-                Proporcionar um ambiente acolhedor e estimulante que promova o desenvolvimento integral das crianças, respeitando suas individualidades e cultivando valores de solidariedade, criatividade e curiosidade.   
-            </p>
-            <h1>
-            Visão
-            </h1>
-            <p>
-            Ser reconhecida como uma referência em educação infantil, destacando-se pelo compromisso com a excelência educativa e o cuidado com o bem-estar das crianças.
-            </p>
-            <h1>
-            1) Desenvolvimento Cognitivo:
-            </h1>
-            <ul>
-                <li>
-                    Estimulação da linguagem oral e escrita através de histórias, canções e jogos.
-                </li>
-                <li>
-                    Introdução aos conceitos matemáticos, como números, formas e tamanhos, por meio de atividades lúdicas.
-                </li>
-                <li>
-                    Exploração do ambiente físico e natural, incentivando a curiosidade e a experimentação.
-                </li>
-            </ul>           
-            <h1>
-            2) Desenvolvimento Socioemocional:
-            </h1>
-             <ul>
-                <li>
-                    Promoção da autonomia e da autoestima, incentivando a tomada de decisões e a resolução de conflitos de forma construtiva.
-                </li>
-                <li>
-                    Estímulo à socialização e ao trabalho em equipe, através de atividades colaborativas e de integração.
-                </li>
-                <li>
-                    Cultivo de valores como empatia, respeito e solidariedade, através de vivências cotidianas e exemplos positivos.
-                </li>
-            </ul>   
-            <h1>
-            3)  Desenvolvimento Motor:
-            </h1>
-            <ul>
-                <li>
-                    Estímulo ao desenvolvimento motor grosso, através de brincadeiras ao ar livre, corridas, saltos e jogos de equilíbrio.
-                </li>
-                <li>
-                    Promoção da coordenação motora fina, através de atividades como recorte, pintura, modelagem e montagem de quebra-cabeças.
-
-                </li>
-            </ul>   
+        <div class="curriculo">
+            <h1>Missão</h1>
+            <p>Proporcionar um ambiente acolhedor e estimulante que promova o desenvolvimento integral das crianças, respeitando suas individualidades e cultivando valores de solidariedade, criatividade e curiosidade.</p>
+            <h1>Visão</h1>
+            <p>Ser reconhecida como uma referência em educação infantil, destacando-se pelo compromisso com a excelência educativa e o cuidado com o bem-estar das crianças.</p>
+            <h1>1) Desenvolvimento Cognitivo:</h1>
+            <p id="problema">Estimulação da linguagem oral e escrita através de histórias, canções e jogos.</p>
+            <p>Introdução aos conceitos matemáticos, como números, formas e tamanhos, por meio de atividades lúdicas.</p>
+            <p>Exploração do ambiente físico e natural, incentivando a curiosidade e a experimentação.</p>
+            <h1>2) Desenvolvimento Socioemocional:</h1>
+            <p>Promoção da autonomia e da autoestima, incentivando a tomada de decisões e a resolução de conflitos de forma construtiva.</p>
+            <p>Estímulo à socialização e ao trabalho em equipe, através de atividades colaborativas e de integração.</p>
+            <p>Cultivo de valores como empatia, respeito e solidariedade, através de vivências cotidianas e exemplos positivos.</p>
+            <h1>3) Desenvolvimento Motor:</h1>
+            <p>Estímulo ao desenvolvimento motor grosso, através de brincadeiras ao ar livre, corridas, saltos e jogos de equilíbrio.</p>
+            <p>Promoção da coordenação motora fina, através de atividades como recorte, pintura, modelagem e montagem de quebra-cabeças.</p>
         </div>
     </main>
+    <script src="traducao.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

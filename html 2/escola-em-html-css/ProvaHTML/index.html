@@ -10,39 +10,43 @@
 </head>
 <body>
     <header>
-        <nav >
-            <ul class="Flexnav">
-                <img id="imagem" src="assets/escola.png" alt="escola">
-                <li><a href="contato.html" > <i class="fa-solid fa-school"></i>Contato</a></li>
-                <li><a href="curriculo.html"><i class="fa-solid fa-newspaper"></i>Curriculo</a></li>
-                <li><a href="corpoDocente.html"><i class="fa-solid fa-person-chalkboard"></i>Corpo docente</a></li>
-                <li><a href="eventosEscolares.html"><i class="fa-solid fa-baseball"></i>Eventos Escolaress</a></li>
-                <li><a href="recurso.html"><i class="fa-solid fa-person-breastfeeding"></i>Recurso para os pais</a></li>
+        <nav>
+            <img id="imagem" src="assets/escola.png" alt="escola">
+            <button class="hamburger" id="hamburger">
+                <i class="fa fa-bars"></i>
+            </button>
+            <ul class="Flexnav" id="nav-links">
+                <li><a href="contato.html" tabindex="1"><i class="fa-solid fa-school"></i><span id="nav-contact">Contato</span></a></li>
+                <li><a href="curriculo.html" tabindex="2"><i class="fa-solid fa-newspaper"></i><span id="nav-curriculum">Currículo</span></a></li>
+                <li><a href="corpoDocente.html" tabindex="3"><i class="fa-solid fa-person-chalkboard"></i><span id="nav-teaching-staff">Corpo docente</span></a></li>
+                <li><a href="eventosEscolares.html" tabindex="4"><i class="fa-solid fa-baseball"></i><span id="nav-school-events">Eventos Escolares</span></a></li>
+                <li><a href="recurso.html" tabindex="5"><i class="fa-solid fa-person-breastfeeding"></i><span id="nav-parent-resources">Recursos para os pais</span></a></li>
+                <li><button id="translate-button">Traduzir</button></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div id="start" >
-            <img src="assets/start.png" alt="Escola Start">
+        <div id="start">
+            <img id="start" src="assets/start.png" alt="Escola Start">
         </div>
-       
-        <div class="noticias">
-            <h1 id="ultimas">Ultimas Noticias</h1>
-            <div class="noticias-list">
-                <div>
-                    <h1>Programas acadêmicos</h1>
-                    <p>O Programa Acadêmico Estudantil da Escola Start comemora um aumento notável no desempenho escolar dos alunos, refletindo o impacto positivo das iniciativas educativas implementadas. Sob a direção da coordenadora acadêmica, Professora Ana Oliveira, os estudantes demonstraram progresso significativo em suas notas e participação em sala de aula, evidenciando o compromisso da escola com a excelência acadêmica.</p>
-                </div>
-                <div>
-                    <h1>Equipes Esportivas</h1>
-                    <p>A equipe de futebol da Escola Start alcançou uma vitória marcante no Campeonato Regional, vencendo por 3 a 0. Sob a liderança do capitão Ricardo Silva e orientação técnica do treinador Pedro Ramos, os jovens atletas demonstraram talento e dedicação, consolidando-se como uma força a ser reconhecida no cenário esportivo local.</p>
-                </div>
-                <div>
-                    <h1>Clubes Estudantis</h1>
-                    <p>Os jovens membros do Clube Estudantil Infantil de Leitura alcançaram uma conquista notável no âmbito literário. Sob a orientação da coordenadora do clube, Professora Carla Santos, os estudantes mergulharam em um mundo de livros e ideias, culminando em uma vitória histórica no concurso de leitura regional</p>
-                </div>
-             </div>
+        <h1 id="ultimas">Últimas Notícias</h1>
+        <div class="noticias-list">
+            <div>
+                <h1 id="programasAcademicos">Programas Acadêmicos</h1>
+                <p>O Programa Acadêmico Estudantil da Escola Start comemora um aumento notável no desempenho escolar dos alunos, refletindo o impacto positivo das iniciativas educativas implementadas. Sob a direção da coordenadora acadêmica, Professora Ana Oliveira, os estudantes demonstraram progresso significativo em suas notas e participação em sala de aula, evidenciando o compromisso da escola com a excelência acadêmica.</p>
+            </div>
+            <div>
+                <h1>Equipes Esportivas</h1>
+                <p>A equipe de futebol da Escola Start alcançou uma vitória marcante no Campeonato Regional, vencendo por 3 a 0. Sob a liderança do capitão Ricardo Silva e orientação técnica do treinador Pedro Ramos, os jovens atletas demonstraram talento e dedicação, consolidando-se como uma força a ser reconhecida no cenário esportivo local.</p>
+            </div>
+            <div>
+                <h1>Clubes Estudantis</h1>
+                <p>Os jovens membros do Clube Estudantil Infantil de Leitura alcançaram uma conquista notável no âmbito literário. Sob a orientação da coordenadora do clube, Professora Carla Santos, os estudantes mergulharam em um mundo de livros e ideias, culminando em uma vitória histórica no concurso de leitura regional.</p>
+            </div>
         </div>
     </main>
+    <script src="traducao.js"></script>
+    <script src="script.js"></script>
+    
 </body>
 </html>

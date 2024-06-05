@@ -11,20 +11,37 @@
 <body>
     <header>
         <nav >
-            <ul class="Flexnav">
+            <button class="hamburger" id="hamburger">
+                <i class="fa fa-bars"></i>
+            </button>
+            <ul class="Flexnav"id="nav-links">
                 <img id="imagem" src="assets/escola.png" alt="escola">
-                <li><a href="index.html" > <i class="fa-solid fa-arrow-left"></i>Principal</a></li>
-                <li><a href="contato.html" > <i class="fa-solid fa-school"></i>Contato</a></li>
-                <li><a href="curriculo.html"><i class="fa-solid fa-newspaper"></i>Curriculo</a></li>
-                <li><a href="corpoDocente.html"><i class="fa-solid fa-person-chalkboard"></i>Corpo docente</a></li>
-                <li><a href="eventosEscolares.html"><i class="fa-solid fa-baseball"></i>Eventos Escolaress</a></li>
+                <li><a href="index.html" tabindex="1"> <i class="fa-solid fa-arrow-left"></i>Principal</a></li>
+                <li><a href="contato.html" tabindex="2"> <i class="fa-solid fa-school"></i>Contato</a></li>
+                <li><a href="curriculo.html" tabindex="3"><i class="fa-solid fa-newspaper"></i>Currículo</a></li>
+                <li><a href="corpoDocente.html" tabindex="4"><i class="fa-solid fa-person-chalkboard"></i>Corpo docente</a></li>
+                <li><a href="eventosEscolares.html" tabindex="5"><i class="fa-solid fa-baseball"></i>Eventos Escolaress</a></li>
+                <li><button id="translate-button">Traduzir</button></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div id="start" >
-            <img src="assets/start.png" alt="Escola Start">
+        <div class="recursos">
+            <h1>Calendário de Provas</h1>
+            <img id="calendario" src="assets/calendario.png" alt="calendario de provas">
+            <h1>Comunicados e Avisos</h1>
+            <p>
+                <strong> Importante:</strong> As matrículas para o próximo ano letivo estarão abertas a partir do dia 15 de maio. Não perca o prazo para garantir a vaga de seu filho na escola.
+            </p>
+            <p>
+                <strong>Evento Cultural:</strong> No próximo sábado, dia 20 de abril, teremos uma apresentação especial dos alunos do ensino fundamental. Venha prestigiar e apoiar nossos talentosos estudantes!
+            </p>
+            <p>
+                <strong>Feriado Escolar:</strong> Lembramos aos pais e alunos que a escola estará fechada na próxima segunda-feira, dia 1º de maio, devido ao feriado do Dia do Trabalho. Retornaremos às atividades normais na terça-feira seguinte.
+            </p>
         </div>
     </main>
+    <script src="traducao.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -11,13 +11,17 @@
 <body>
     <header>
         <nav >
-            <ul class="Flexnav">
+            <button class="hamburger" id="hamburger">
+                <i class="fa fa-bars"></i>
+            </button>
+            <ul class="Flexnav"id="nav-links">
                 <img id="imagem" src="assets/escola.png" alt="escola">
-                <li><a href="index.html" > <i class="fa-solid fa-arrow-left"></i>Principal</a></li>
-                <li><a href="contato.html" > <i class="fa-solid fa-school"></i>Contato</a></li>
-                <li><a href="curriculo.html"><i class="fa-solid fa-newspaper"></i>Curriculo</a></li>
-                <li><a href="eventosEscolares.html"><i class="fa-solid fa-baseball"></i>Eventos Escolaress</a></li>
-                <li><a href="recurso.html"><i class="fa-solid fa-person-breastfeeding"></i>Recurso para os pais</a></li>
+                <li><a href="index.html" tabindex="1"> <i class="fa-solid fa-arrow-left"></i>Principal</a></li>
+                <li><a href="contato.html" tabindex="2"> <i class="fa-solid fa-school"></i>Contato</a></li>
+                <li><a href="curriculo.html" tabindex="3"><i class="fa-solid fa-newspaper"></i>Currículo</a></li>
+                <li><a href="eventosEscolares.html" tabindex="4"><i class="fa-solid fa-baseball"></i>Eventos Escolaress</a></li>
+                <li><a href="recurso.html" tabindex="5"><i class="fa-solid fa-person-breastfeeding"></i>Recursos para os pais</a></li>
+                <li><button id="translate-button">Traduzir</button></li>
             </ul>
         </nav>
     </header>
@@ -37,5 +41,7 @@
             </div>
         </div>
     </main>
+    <script src="traducao.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

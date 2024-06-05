@@ -1,4 +1,4 @@
-<!DOCTYPE html>                
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -6,18 +6,22 @@
     <script src="https://kit.fontawesome.com/eb6743939f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
-    <title>Contato</title>
+    <title>Informações</title>
 </head>
 <body>
     <header>
-        <nav >
-            <ul class="Flexnav">
-                <img id="imagem" src="assets/escola.png" alt="escola">
-                <li><a href="index.html" > <i class="fa-solid fa-arrow-left"></i>Principal</a></li>
-                <li><a href="curriculo.html"><i class="fa-solid fa-newspaper"></i>Curriculo</a></li>
-                <li><a href="corpoDocente.html"><i class="fa-solid fa-person-chalkboard"></i>Corpo docente</a></li>
-                <li><a href="eventosEscolares.html"><i class="fa-solid fa-baseball"></i>Eventos Escolaress</a></li>
-                <li><a href="recurso.html"><i class="fa-solid fa-person-breastfeeding"></i>Recurso para os pais</a></li>
+        <nav>
+            <img id="imagem" src="assets/escola.png" alt="escola">
+            <button class="hamburger" id="hamburger">
+                <i class="fa fa-bars"></i>
+            </button>
+            <ul class="Flexnav" id="nav-links">
+                <li><a href="index.html"> <i class="fa-solid fa-arrow-left"></i> Principal</a></li>
+                <li><a href="curriculo.html"><i class="fa-solid fa-newspaper"></i> Currículo</a></li>
+                <li><a href="corpoDocente.html"><i class="fa-solid fa-person-chalkboard"></i> Corpo docente</a></li>
+                <li><a href="eventosEscolares.html"><i class="fa-solid fa-baseball"></i> Eventos Escolares</a></li>
+                <li><a href="recurso.html"><i class="fa-solid fa-person-breastfeeding"></i> Recursos para os pais</a></li>
+                <li><button id="translate-button">Translate</button></li>
             </ul>
         </nav>
     </header>
@@ -25,53 +29,53 @@
         <div class="formulario">
             <h1 id="formulario-top">Informações para contato</h1>
             <p>Email: Complete as informações</p>
-            <form>
-                <fieldset><legend>Dados pessoais</legend>
-                <label >Nome</label>
-                <input type="text"">
-                <label >Sobrenome</label>
-                <input type="text""><br><br>
-                <label >Email</label>
-                <input type="text"">
+            <form id="contactForm">
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+                    <label>Nome</label>
+                    <input type="text" id="nome">
+                    <label>Sobrenome</label>
+                    <input type="text" id="sobrenome"><br><br>
+                    <label>Email</label>
+                    <input type="text" id="email">
                 </fieldset> 
-            </form>
-            <form>
-                <fieldset><legend>Informações</legend>
-                <label >Categoria</label>
-                <select required>
-                    <Option value="">
-                        Selecione
-                    </Option>
-                    <Option value="">
-                    Aluno
-                    </Option>
-                    <Option value="">
-                        Professor
-                    </Option>
-                    <Option value="">
-                        Funcionario
-                    </Option>
-                </select>
-                <br><br>
-                <label >Email</label>
-                <input type="text""><br>
+                <fieldset>
+                    <legend>Senioridade</legend>
+                    <label>Categoria</label>
+                    <select id="categoria" required>
+                        <option value="">Selecione</option>
+                        <option value="aluno">Aluno</option>
+                        <option value="professor">Professor</option>
+                        <option value="funcionario">Funcionário</option>
+                    </select>
+                    <br><br>
+                    <label>Email</label>
+                    <input type="text" id="email2"><br>
                     <strong><label>Qual o assunto?</label></strong><br><br>
                     <label>Matricula</label>
-                    <input type="checkbox"value="HTML">
+                    <input type="checkbox" value="matricula">
                     <label>Mensalidade</label>
-                    <input type="checkbox"value="CSS">
+                    <input type="checkbox" value="mensalidade">
                     <label>Eventos</label>
-                    <input type="checkbox"value="CSS">
+                    <input type="checkbox" value="eventos">
                     <label>Biblioteca</label>
-                    <input type="checkbox"value="CSS">
+                    <input type="checkbox" value="biblioteca">
+                    <label>Pós graduações</label>
+                    <input type="checkbox" value="posgraduacoes">
+                    <label>Especializações</label>
+                    <input type="checkbox" value="especializacoes">
                     <label>Administrativo</label>
-                    <input type="checkbox"value="CSS"><br><br>
+                    <input type="checkbox" value="administrativo"><br><br>
                     <label><strong>Outra informação</strong></label><br>
-                    <input type="text"><br><br>
-                    <button>enviar</button>
+                    <input type="text" id="outrainfo"><br><br>
+                    <button type="submit">Enviar</button>
+                    
                 </fieldset> 
-                    </form>
+            </form>
         </div>  
     </main>
+    
+    <script src="traducao.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

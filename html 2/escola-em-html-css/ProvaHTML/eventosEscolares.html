@@ -11,20 +11,25 @@
 <body>
     <header>
         <nav >
-            <ul class="Flexnav">
+            <button class="hamburger" id="hamburger">
+                <i class="fa fa-bars"></i>
+            </button>
+            <ul class="Flexnav"id="nav-links">
                 <img id="imagem" src="assets/escola.png" alt="escola">
-                <li><a href="index.html" > <i class="fa-solid fa-arrow-left"></i>Principal</a></li>
-                <li><a href="contato.html" > <i class="fa-solid fa-school"></i>Contato</a></li>
-                <li><a href="curriculo.html"><i class="fa-solid fa-newspaper"></i>Curriculo</a></li>
-                <li><a href="corpoDocente.html"><i class="fa-solid fa-person-chalkboard"></i>Corpo docente</a></li>
-                <li><a href="recurso.html"><i class="fa-solid fa-person-breastfeeding"></i>Recurso para os pais</a></li>
+                <li><a href="index.html" tabindex="1"> <i class="fa-solid fa-arrow-left"></i>Principal</a></li>
+                <li><a href="contato.html" tabindex="2"> <i class="fa-solid fa-school"></i>Contato</a></li>
+                <li><a href="curriculo.html" tabindex="3"><i class="fa-solid fa-newspaper"></i>Currículo</a></li>
+                <li><a href="corpoDocente.html" tabindex="4"><i class="fa-solid fa-person-chalkboard"></i>Corpo docente</a></li>
+                <li><a href="recurso.html" tabindex="5"><i class="fa-solid fa-person-breastfeeding"></i>Recursos para os pais</a></li>
+                <li><button id="translate-button">Traduzir</button></li>
+            </ul>
             </ul>
         </nav>
     </header>
     <main>
         <div class="eventos">
             <div>
-                <p>
+                <p id="textoEventos">
                     Durante a infância e adolescência, é essencial adquirir habilidades que vão além das salas de aula. Aprender a trabalhar em equipe, a lidar com vitórias e derrotas, a ter disciplina e coragem, bem como a respeitar regras, são aspectos cruciais para o desenvolvimento integral dos jovens. Nossa convicção reside no investimento no esporte competitivo como uma ferramenta eficaz para promover tais valores. Ao oferecer um ambiente saudável e uma infraestrutura completa para a prática esportiva, estamos não apenas incentivando a atividade física, mas também cultivando cidadãos conscientes, capazes de contribuir de maneira positiva para a sociedade.
                 </p>
             </div>
@@ -33,13 +38,15 @@
                 <p>Nossa equipe de corrida, campeão do circuito estadual infantil</p>
             </div>
             <div>
-                <img src="assets/futebol.png" alt="futebol">
+                <img id="futebol" src="assets/futebol.png" alt="futebol">
                 <p>
-                    Nossas crianças são 3º lugar estadual, e estamos sempre aceitando novos integrantes.
+                Nossas crianças são 3º lugar estadual, e estamos sempre aceitando novos integrantes.
                 </p>
             </div>
 
         </div>
     </main>
+    <script src="traducao.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
